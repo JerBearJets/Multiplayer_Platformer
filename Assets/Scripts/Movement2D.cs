@@ -6,7 +6,7 @@ public class Movement2D : MonoBehaviour
 {
     private CharacterController _characterController;
     private Vector2 _input;
-     private Vector2 _direction;
+    private Vector2 _direction;
     private float _velocity;
     private float _gravity= -9.0f;
     [SerializeField] private float gravitymultiplier = 3.0f;

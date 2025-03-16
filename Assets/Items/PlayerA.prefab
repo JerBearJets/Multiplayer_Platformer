@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2438628412742857507}
   - component: {fileID: 52271135385877566}
   - component: {fileID: 6600322210745343816}
+  - component: {fileID: 8054607723629029011}
   m_Layer: 0
   m_Name: PlayerA
   m_TagString: Untagged
@@ -234,8 +235,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 837711746
-  InScenePlacedSourceGlobalObjectIdHash: 0
+  GlobalObjectIdHash: 1186064728
+  InScenePlacedSourceGlobalObjectIdHash: 1959716395
   DeferredDespawnTick: 0
   Ownership: 1
   AlwaysReplicateAsRoot: 0
@@ -247,3 +248,19 @@ MonoBehaviour:
   AutoObjectParentSync: 1
   SyncOwnerTransformWhenParented: 1
   AllowOwnerToParent: 0
+--- !u!114 &8054607723629029011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3566787081883589357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f74db925d58ea984cbc13821dfda4475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  playerSkin:
+  - {fileID: 4693404105354254812, guid: 7769e586920524842af4f24882f754ab, type: 3}
+  - {fileID: 4714250745514150810, guid: 70c08c1f952657642bd6da1cf8d703d9, type: 3}
