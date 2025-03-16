@@ -27,7 +27,7 @@ public class PlayerSettings : NetworkBehaviour
     {
         // If the player connecting is the client, change sprite model, direction, size, and hitbox
 
-        if(IsOwner)
+        if(OwnerClientId == 1)
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = playerSkin[1];
 
@@ -35,14 +35,14 @@ public class PlayerSettings : NetworkBehaviour
 
             transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
 
-            Vector2 spriteSize = spriteRend.bounds.size;
-            boxCollider.size = spriteSize;
+            //Vector2 spriteSize = spriteRend.bounds.size;
+            //boxCollider.size = spriteSize;
 
             characterController.radius = 2f;
-            
         }
-       
-
+        
+            
+            
         
     }
 }

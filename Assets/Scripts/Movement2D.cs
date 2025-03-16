@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-public class Movement2D : MonoBehaviour
+using Unity.Netcode;
+public class Movement2D : NetworkBehaviour
 {
     private CharacterController _characterController;
     private Vector2 _input;
@@ -26,6 +27,8 @@ public class Movement2D : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!IsOwner) return;
+
         Applygrav();  
         ApplyMove();
     }
