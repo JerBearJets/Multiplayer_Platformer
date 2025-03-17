@@ -15,6 +15,9 @@ public class PlayerSettings : NetworkBehaviour
     private BoxCollider boxCollider;
     private CharacterController characterController;
 
+    
+
+
     // Awaken the renderers when changing skins
     private void Awake()
     {
@@ -24,10 +27,11 @@ public class PlayerSettings : NetworkBehaviour
     }
 
     public override void OnNetworkSpawn()
-    {
+    {  
+        
         // If the player connecting is the client, change sprite model, direction, size, and hitbox
 
-        if(OwnerClientId == 1)
+        if (OwnerClientId == 1)
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = playerSkin[1];
 
@@ -40,9 +44,8 @@ public class PlayerSettings : NetworkBehaviour
 
             characterController.radius = 2f;
         }
-        
-            
-            
-        
+
     }
+
+
 }
